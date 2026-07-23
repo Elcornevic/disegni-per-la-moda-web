@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disegni per la moda | Diseño y Confección a la Medida</title>
+    <!-- Tailwind CSS CDN para prototipado/despliegue rápido -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#1a1818',
+                            gold: '#c5a059',
+                            cream: '#fcfaf7',
+                            gray: '#75726e'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-brand-cream text-brand-dark font-sans antialiased selection:bg-brand-gold selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed w-full bg-brand-cream/90 backdrop-blur-md z-50 border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="font-serif text-2xl font-bold tracking-wider text-brand-dark">
+                DISEGNI <span class="text-brand-gold font-normal italic">per la moda</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-medium text-stone-700">
+                <a href="#inicio" class="hover:text-brand-gold transition-colors">Inicio</a>
+                <a href="#servicios" class="hover:text-brand-gold transition-colors">Servicios</a>
+                <a href="#portafolio" class="hover:text-brand-gold transition-colors">Galería</a>
+                <a href="#nosotros" class="hover:text-brand-gold transition-colors">Nosotros</a>
+                <a href="#contacto" class="hover:text-brand-gold transition-colors">Contacto</a>
+            </nav>
+            <a href="https://wa.me/1234567890?text=Hola,%20quisiera%20agendar%20una%20cita%20de%20diseño" target="_blank" 
+               class="bg-brand-dark text-white px-5 py-2.5 text-xs uppercase tracking-widest hover:bg-brand-gold transition-all duration-300">
+               Agendar Cita
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-32 pb-20 md:pt-44 md:pb-32 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="text-xs uppercase tracking-[0.3em] text-brand-gold font-semibold">Alta Costura & Confección Exclusiva</span>
+                <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl text-brand-dark leading-tight">
+                    Elegancia hecha a la medida de tus sueños.
+                </h1>
+                <p class="text-brand-gray text-lg font-light leading-relaxed">
+                    Diseños únicos y confección artesanal pensados para resaltar tu personalidad en cada ocasión especial.
+                </p>
+                <div class="pt-4 flex flex-col sm:flex-row gap-4">
+                    <a href="#portafolio" class="inline-block text-center bg-brand-gold text-white px-8 py-3.5 text-xs uppercase tracking-widest font-medium hover:bg-brand-dark transition-all">
+                        Ver Colección
+                    </a>
+                    <a href="#contacto" class="inline-block text-center border border-brand-dark text-brand-dark px-8 py-3.5 text-xs uppercase tracking-widest font-medium hover:bg-brand-dark hover:text-white transition-all">
+                        Solicitar Cotización
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="aspect-[3/4] bg-stone-300 overflow-hidden shadow-2xl relative">
+                    <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=1000&auto=format&fit=crop" 
+                         alt="Diseño y confección de moda" class="w-full h-full object-cover">
+                </div>
+                <!-- Card flotante de acento -->
+                <div class="absolute -bottom-6 -left-6 bg-white p-6 shadow-xl border border-stone-100 hidden sm:block max-w-xs">
+                    <p class="font-serif italic text-brand-dark text-lg">"La moda pasa, el estilo permanece."</p>
+                    <span class="text-xs text-brand-gold uppercase tracking-wider block mt-2">— Confección Artesanal</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-20 bg-white border-y border-stone-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-xs uppercase tracking-[0.3em] text-brand-gold font-semibold">Lo Que Hacemos</span>
+                <h2 class="font-serif text-3xl sm:text-4xl text-brand-dark">Servicios Personalizados</h2>
+                <div class="w-12 h-0.5 bg-brand-gold mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <div class="p-8 border border-stone-100 bg-brand-cream hover:shadow-lg transition-all duration-300">
+                    <div class="text-brand-gold text-3xl mb-4"><i class="fa-solid fa-scissors"></i></div>
+                    <h3 class="font-serif text-xl mb-3 text-brand-dark">Confección a la Medida</h3>
+                    <p class="text-brand-gray text-sm leading-relaxed">
+                        Creamos prendas desde cero ajustadas perfectamente a tus medidas, garantizando un calce impecable y cómodo.
+                    </p>
+                </div>
+                <!-- Servicio 2 -->
+                <div class="p-8 border border-stone-100 bg-brand-cream hover:shadow-lg transition-all duration-300">
+                    <div class="text-brand-gold text-3xl mb-4"><i class="fa-solid fa-crown"></i></div>
+                    <h3 class="font-serif text-xl mb-3 text-brand-dark">Vestidos de Gala y Eventos</h3>
+                    <p class="text-brand-gray text-sm leading-relaxed">
+                        Diseños exclusivos para novias, graduaciones, fiestas y eventos especiales donde quieras destacar con elegancia.
+                    </p>
+                </div>
+                <!-- Servicio 3 -->
+                <div class="p-8 border border-stone-100 bg-brand-cream hover:shadow-lg transition-all duration-300">
+                    <div class="text-brand-gold text-3xl mb-4"><i class="fa-solid fa-pen-nib"></i></div>
+                    <h3 class="font-serif text-xl mb-3 text-brand-dark">Asesoría y Bocetos</h3>
+                    <p class="text-brand-gray text-sm leading-relaxed">
+                        Te orientamos en la elección de telas, cortes y texturas que mejor favorezcan tu silueta e idea de diseño.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería / Portafolio -->
+    <section id="portafolio" class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div class="space-y-3">
+                    <span class="text-xs uppercase tracking-[0.3em] text-brand-gold font-semibold">Atelier</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl text-brand-dark">Nuestras Creaciones</h2>
+                </div>
+                <p class="text-brand-gray text-sm max-w-md mt-4 md:mt-0">
+                    Una muestra del trabajo artesanal y la atención al detalle impregnada en cada costura.
+                </p>
+            </div>
+
+            <!-- Grid de Fotos (Masonry básico / CSS Grid) -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="group relative overflow-hidden bg-stone-200 aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?q=80&w=800&auto=format&fit=crop" 
+                         alt="Vestido elegante" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <span class="text-white font-serif text-lg">Vestido de Gala Satén</span>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden bg-stone-200 aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop" 
+                         alt="Traje a la medida" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <span class="text-white font-serif text-lg">Set de Alta Costura</span>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden bg-stone-200 aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=800&auto=format&fit=crop" 
+                         alt="Detalle de confección" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <span class="text-white font-serif text-lg">Diseños Casual Chic</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre la Diseñadora -->
+    <section id="nosotros" class="py-20 bg-white border-t border-stone-200">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="order-2 md:order-1 space-y-6">
+                <span class="text-xs uppercase tracking-[0.3em] text-brand-gold font-semibold">Detrás de las Tijeras</span>
+                <h2 class="font-serif text-3xl sm:text-4xl text-brand-dark">Pasión por el Detalle y la Moda</h2>
+                <p class="text-brand-gray leading-relaxed font-light">
+                    En <strong>Disegni per la moda</strong> creemos que cada prenda debe contar una historia. Nos dedicamos a transformar telas nobles en piezas de vestir que transmitan elegancia, confianza y comodidad.
+                </p>
+                <p class="text-brand-gray leading-relaxed font-light">
+                    Cada trazo, corte y puntada se realiza con técnicas artesanales cuidadas al milímetro para ofrecer una experiencia de costura realmente personalizada.
+                </p>
+            </div>
+            <div class="order-1 md:order-2">
+                <div class="aspect-square bg-stone-100 relative p-4 border border-stone-200">
+                    <img src="https://images.unsplash.com/photo-1537832816519-689ad163238b?q=80&w=800&auto=format&fit=crop" 
+                         alt="Taller de confección" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section id="contacto" class="py-20 px-6 bg-brand-cream">
+        <div class="max-w-4xl mx-auto bg-white p-8 sm:p-12 border border-stone-200 shadow-sm">
+            <div class="text-center space-y-2 mb-10">
+                <span class="text-xs uppercase tracking-[0.3em] text-brand-gold font-semibold">Contacto Directo</span>
+                <h2 class="font-serif text-3xl text-brand-dark">Agenda tu Consulta</h2>
+                <p class="text-brand-gray text-sm">Déjanos tus datos o la idea de tu diseño y te responderemos a la brevedad.</p>
+            </div>
+
+            <form action="https://formsubmit.co/vittoriaporlamoda@hotmail.com" method="POST" class="space-y-6">
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-stone-600 mb-2">Nombre</label>
+                        <input type="text" name="name" required class="w-full px-4 py-3 bg-brand-cream border border-stone-200 text-sm focus:outline-none focus:border-brand-gold">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-stone-600 mb-2">Teléfono / WhatsApp</label>
+                        <input type="tel" name="phone" required class="w-full px-4 py-3 bg-brand-cream border border-stone-200 text-sm focus:outline-none focus:border-brand-gold">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs uppercase tracking-wider text-stone-600 mb-2">¿Qué prenda deseas confeccionar?</label>
+                    <textarea name="message" rows="4" required placeholder="Ej: Vestido de noche para una graduación en satén verde..." class="w-full px-4 py-3 bg-brand-cream border border-stone-200 text-sm focus:outline-none focus:border-brand-gold"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-brand-dark text-white py-4 text-xs uppercase tracking-widest font-medium hover:bg-brand-gold transition-colors">
+                    Enviar Mensaje
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-white py-12 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-6 text-center space-y-6">
+            <div class="font-serif text-2xl tracking-wider">
+                DISEGNI <span class="text-brand-gold italic">per la moda</span>
+            </div>
+            <div class="flex justify-center space-x-6 text-stone-400 text-lg">
+                <a href="#" class="hover:text-brand-gold"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-brand-gold"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://wa.me/51946554108" class="hover:text-brand-gold"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <p class="text-xs text-stone-500 uppercase tracking-widest">
+                © Disegni per la moda. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/1234567890?text=Hola,%20quisiera%20consultar%20por%20una%20confección" 
+       target="_blank" 
+       class="fixed bottom-6 right-6 bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg hover:bg-emerald-700 hover:scale-110 transition-all z-50">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
